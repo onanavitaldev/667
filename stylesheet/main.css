@@ -1,0 +1,100 @@
+/*
+    By ONANA vital
+    With SCSS
+*/
+*::-moz-selection {
+  background-color: var(--color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--color);
+  color: #fff;
+}
+
+/* Variables */
+:root {
+  --font: Figtree, sans-serif;
+  --color: #0a2f13;
+}
+
+html,
+body {
+  font-family: var(--font);
+}
+
+body::-webkit-scrollbar {
+  width: 2px; /* Adjust the width of the scrollbar */
+  background-color: transparent; /* Set the track color */
+}
+
+/* Target the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the thumb color */
+  border-radius: 6px; /* Add rounded corners */
+}
+
+
+.load 
+{
+  background-color: #000;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0s ease-in 0.9s;
+}
+.load .loader img 
+{
+  animation: zoomIn 1s;
+}
+
+body
+{
+  background-color: #000000;
+}
+
+nav
+{
+  background-color: rgba(0, 0, 0, 0.91);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#banner h1
+{
+  animation: fadeInDown 1s;
+}
+
+#trust img
+{
+  animation: zoomIn 1s;
+}
+
+#gallery img
+{
+  cursor: pointer;
+  transition: all 0.4s ease-in 0s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+#gallery img:hover
+{
+  opacity: 0.8;
+}
+
+#concept
+{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.915), rgb(0, 0, 0) 55%), 
+  url('../assets/img/img\ \(13\).jpg');
+  background-attachment: fixed;
+}
+
+form input::placeholder
+{
+  color: #fff;
+}
